@@ -88,9 +88,7 @@ def  page_country():
 
     
 
-    for row in df_nuclear.itertuples():
-        if row.data_Purpose not in purpose:
-            purpose.append(row.data_Purpose)
+
 
     # [DA 2] drop values
   
@@ -240,7 +238,6 @@ def  page_country():
 
 def page_bombs_year():
     import pandas as pd
-    import matplotlib.pyplot as plt
     import streamlit as st
 
     def set_theme():
