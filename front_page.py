@@ -288,9 +288,7 @@ def page_bombs_year():
 
     # Plot distribution of weapon source countries for the selected year
     if Suma > 0:
-        df_selected_year['WEAPON_SOURCE_COUNTRY'].value_counts().plot(kind='bar',
-                                                                      color=["red", "orange", "blue", "green",
-                                                                             "yellow"])
+        df_selected_year['WEAPON_SOURCE_COUNTRY'].value_counts().plot(kind='bar', color=["red", "orange", "blue", "green","yellow"])
         st.title("Source Countries")
         st.pyplot()
 
