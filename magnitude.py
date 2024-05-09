@@ -24,7 +24,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.write("To determine which bombs are the strongest, we analize the Data lower yield and the data upper yield, the higest these two numbers are, the strongest the bombs were")
 from PIL import Image
-img = Image.open("C:/Users/lasso/PycharmProjects/Final_project/pages/bombita.jpeg")
+img = Image.open("bombita.jpeg")
 st.image(img, width= 500)
 max_lower_yield = df_nuclear['Data.Yeild.Lower'].max()
 max_upper_yield = df_nuclear['Data.Yeild.Upper'].max()
