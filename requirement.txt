@@ -2,3 +2,4 @@ streamlit
 pandas
 pydeck
 plotly.graph_objs
+matplotlib.pyplot
