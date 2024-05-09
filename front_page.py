@@ -86,34 +86,16 @@ def  page_country():
 
     Suma = 0
 
-    purpose = []
+    
 
     for row in df_nuclear.itertuples():
         if row.data_Purpose not in purpose:
             purpose.append(row.data_Purpose)
 
     # [DA 2] drop values
-    purpose.remove('Se')
-    purpose.remove('Sb')
-    purpose.remove('Pne:Plo')
-    purpose.remove('Pne:V')
-    purpose.remove('Nan')
-    purpose.remove('Wr/Se')
-    purpose.remove('Wr/We')
-    purpose.remove('Wr/Pne')
-    purpose.remove('Wr/Sam')
-    purpose.remove('Pne/Wr')
-    purpose.remove('Se/Wr')
-    purpose.remove('Wr/P/Sa')
-    purpose.remove('We/Sam')
-    purpose.remove('We/Wr')
-    purpose.remove('Wr/F/Sa')
-    purpose.remove('Wr/Fms')
-    purpose.remove('Fms/Wr')
-    purpose.remove('Wr/P/S')
-    purpose.remove('Wr/F/S')
-    purpose.remove('Wr/We/S')
-    print(purpose)
+  
+
+    purpose = ['Combat','Fms','Me','Pne','Sam','Transp','We','Wr',]
 
     # [ST3]
     selected_purpose1 = st.selectbox("Please select the Purpose you would like to know the meaning of", purpose)
@@ -312,7 +294,7 @@ def page_bombs_year():
         df_selected_year['WEAPON_SOURCE_COUNTRY'].value_counts().plot(kind='bar',
                                                                       color=["red", "orange", "blue", "green",
                                                                              "yellow"])
-        plt.xlabel("Source Countries")
+        st.title("Source Countries")
         st.pyplot()
 
     st.title("Bombs Dropped Over Years by Country")
