@@ -26,7 +26,7 @@ comlums_selected = df_nuclear[list_selected]
 
 st.title("Nuclear explosions between 1945 and 1998")
 from PIL import Image
-img = Image.open("C:/Users/lasso/PycharmProjects/Final_project/pages/nuclear.jpeg")
+img = Image.open("nuclear.jpeg")
 st.image(img, width= 500, )
 st.write("In this page we are going analize the nuclear bombs data from 1945 to 1998. For it we have three pages which divided the content between year, purpose and magnitude.")
 st.write()
