@@ -35,7 +35,7 @@ for row in df_nuclear.itertuples():
         years.append(row.Date_Year)
 
 from PIL import Image
-img = Image.open("C:/Users/lasso/PycharmProjects/Final_project/pages/nuclear bombs.jpeg")
+img = Image.open("nuclear bombs.jpeg")
 st.image(img, width= 500)
 
 #[ST1]
